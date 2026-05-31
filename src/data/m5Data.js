@@ -4,7 +4,7 @@ export const HERO_DATA = {
   title: "",
   subtitle: "617 Horsepower. Pure M Performance.",
   badge: "M5 COMPETITION",
-  bgVideo: "/videos/M5_hero.mp4",
+  bgVideo: "/videos/M5_hero_web.mp4",
   ctaText: "Configure Yours",
   secondaryCtaText: "Experience V8 Sound",
 };
