@@ -1,10 +1,10 @@
 // High-fidelity data for BMW M5 Competition Landing Page
 
 export const HERO_DATA = {
-  title: "",
+  title: "Power Without Compromise",
   subtitle: "617 Horsepower. Pure M Performance.",
   badge: "M5 COMPETITION",
-  bgVideo: "/videos/M5_hero_web.mp4",
+  bgimg: "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ctaText: "Configure Yours",
   secondaryCtaText: "Experience V8 Sound",
 };

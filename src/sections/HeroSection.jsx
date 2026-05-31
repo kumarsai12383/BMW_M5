@@ -170,23 +170,19 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden font-inter"
     >
       {/* Background Cinematic Image */}
-      <div>
-        <video
-          src={HERO_DATA.bgVideo}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
+      <img
+        ref={bgImageRef}
+        src={HERO_DATA.bgimg}
+        alt="BMW M5 Competition"
+        className="absolute inset-0 w-full h-full object-cover object-center brightness-70 transition-transform duration-100 "
+      />
 
       {/* Futuristic Grid Overlay & Shadow */}
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/80 pointer-events-none" />
       <div className="absolute inset-0 hud-grid opacity-30 pointer-events-none" />
 
       {/* Main Hero Contents */}
-      <div className="relative z-10 text-center px-6 max-w-5xl top-30 flex flex-col items-center">
+      <div className="relative z-10 text-center px-6 max-w-5xl flex flex-col items-center">
         {/* skew badge */}
         <div
           ref={badgeRef}
@@ -203,10 +199,10 @@ export default function HeroSection() {
         {/* Cinematic Title Reveal */}
         <h1
           ref={titleRef}
-          className="font-syncopate font-black text-4xl sm:text-6xl md:text-8xl tracking-tighter text-white leading-none mb-6 uppercase flex flex-wrap justify-center gap-x-4 overflow-hidden"
+          className="font-syncopate font-black text-lg sm:text-6xl md:text-5xl tracking-tighter text-white leading-none mb-6 uppercase flex flex-wrap justify-center gap-x-4 overflow-hidden"
         >
           {HERO_DATA.title.split(" ").map((word, i) => (
-            <span key={i} className="inline-block">
+            <span key={i} className="inline-block ">
               {word}
             </span>
           ))}
