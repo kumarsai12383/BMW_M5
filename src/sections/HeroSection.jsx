@@ -191,7 +191,7 @@ export default function HeroSection() {
           <div className="bg-m-blue w-[6px]"></div>
           <div className="bg-m-dark-blue w-[6px]"></div>
           <div className="bg-m-red w-[6px]"></div>
-          <div className="bg-black/80 text-white px-4 flex items-center tracking-widest leading-none">
+          <div className="bg-black/80 text-white px-1 flex items-center tracking-widest leading-none">
             {HERO_DATA.badge}
           </div>
         </div>
@@ -223,7 +223,11 @@ export default function HeroSection() {
         >
           <button
             onClick={handleCtaClick}
-            className="w-full sm:w-auto px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] bg-m-red hover:bg-red-700 text-white rounded-xs transition-all duration-300 shadow-lg shadow-m-red/20 active:scale-95"
+            className="w-full sm:w-auto px-8 py-4 rounded-lg text-xs cursor-pointer font-bold uppercase tracking-[0.2em]  text-white transition-all duration-300 shadow-lg shadow-m-red/20 active:scale-95"
+            style={{
+              backgroundImage:
+                'linear-gradient(90deg, #0046FF 0%, #00A3E0 50%, #FF1D25 100%)',
+            }}
           >
             {HERO_DATA.ctaText}
           </button>
@@ -231,7 +235,7 @@ export default function HeroSection() {
           <button
             onClick={playV8Sound}
             disabled={isPlayingSound}
-            className={`w-full sm:w-auto px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] border border-white/10 hover:border-white/30 text-white rounded-xs transition-all duration-300 flex items-center justify-center gap-3 backdrop-blur-md active:scale-95 ${
+            className={`w-full sm:w-auto px-8 py-4 text-xs font-bold uppercase cursor-pointer tracking-[0.2em] border border-white/10 hover:border-white/30 text-white rounded-xs transition-all duration-300 flex items-center justify-center gap-3 backdrop-blur-md active:scale-95 ${
               isPlayingSound
                 ? "bg-m-blue/30 border-m-blue/50 text-m-blue animate-pulse"
                 : "bg-white/5"
